@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c7c7c7;
+}
+
+header {
+  width: 1000px;
+  height: 100px;
+  border-radius: 7px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  background: white;
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-menu {
+  position: absolute;
+  right: 40px;
+  bottom: 12px;
+}
+
+header .header-menu span {
+  font-size: 13px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+header .header-menu span:hover {
+  font-weight: bolder;
+}
+
+article {
+  width: 1000px;
+  height: 700px;
+  border-radius: 7px;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  background: white;
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+article > #middle-title {
+  width: 950px;
+  height: 70px;
+  margin-bottom: 20px;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+  font-size: 25px;
+  border-radius: 7px;
+  position: absolute;
+  top: 15px;
+}
+
+article > #article-body {
+  width: 950px;
+  height: 440px;
+  background: #f5f5f5;
+  border-radius: 7px;
+  font-size: 17px;
+  position: absolute;
+  overflow-y: scroll;
+  padding: 20px;
+  top: 105px;
+}
+
+article > #article-body::-webkit-scrollbar {
+  display: none;
+}
+
+article > #article-comment {
+  width: 950px;
+  height: 115px;
+  background: #f5f5f5;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 20px;
+}
